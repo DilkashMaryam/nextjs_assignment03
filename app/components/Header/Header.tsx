@@ -1,0 +1,46 @@
+import Link from "next/link";
+import { FaPhone, FaSearch, FaShoppingBag } from "react-icons/fa";
+import { FaPerson } from "react-icons/fa6";
+
+const Header = () =>{
+    return(
+        <div className="bg-green-400">
+
+          <div className="bg-green-700 px-6 py-4 flex flex-col sm:flex-row sm:justify-between items-center text-sm">
+            <h1 className="text-white">Welcome to Plant.pk Online Store! </h1>
+                <ul className="inline-flex space-x-8 sm:mt-0">
+                <li><Link href="/Track" className="hover:text-black text-white">Track your Order</Link></li>
+                <li><Link href="/Vendor" className="hover:text-black text-white">Become a Vendor</Link></li>
+                <li><Link href="/Wholesale" className="hover:text-black text-white">Wholesale Items</Link></li>
+                <li><Link href="/Location" className="hover:text-black text-white">Plant.pk Location</Link></li>
+                </ul>
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-center justify-between p-6 sm:p-6">
+                <h1 className="text-lime-950 text-2xl font-extrabold">Plant.pk</h1>
+
+                <div className="flex items-center space-x-2 w-full sm:w-1/2 mt-4 sm:mt-0">
+          <input
+            type="text"
+            placeholder="Search what you're looking for"
+            className="w-full p-2 rounded-lg border border-gray-300 focus:outline-none"
+          /><FaSearch className="mr-1" />
+        </div>
+
+        <div className="flex items-center space-x-4 mt-4 sm:mt-0">
+            <FaPhone className="text-white rotate-90" />
+            <Link href="Contact" className="text-white border-transparent rounded-md p-2 hover:bg-green-200 hover:text-black">Hotline</Link>
+          </div>
+          <div className="flex items-center space-x-2">
+          <FaShoppingBag className="text-white"/>
+          <Link href="/" className="border-transparent rounded-md p-2 text-white  hover:bg-green-200 hover:text-black">Shop</Link>
+          </div>
+          <div className="flex items-center space-x-2">
+          <FaPerson className="text-white"/>
+          <button className="border-transparent rounded-md p-2 text-white  hover:bg-green-200 hover:text-black">LogIn</button>
+          </div>
+         </div>
+        </div>
+    )
+};
+export default Header

@@ -7,11 +7,11 @@ const Footer = () =>{
         <p className="text-gray-500 font-thin px-5">Subscribe to get information about products and coupons</p>
         </div>
 
-        <div className="mt-4 sm:mt-0 ">
+        <div className="mt-4 sm:mt-0 w-full sm:w-auto  ">
             <input type="email"
             placeholder="Email"
             className="w-60 sm:w-80 p-2 mx-10 rounded-sm border border-grey-300 mr-2 text-black"/>
-            <button className=" rounded-sm p-2 bg-green-600 text-white w-30 font-bold ">Subscribe</button>
+            <button className=" rounded-sm p-2 w-full sm:w-auto bg-green-600 text-white w-30 font-bold ">Subscribe</button>
             </div>
         </div>
 

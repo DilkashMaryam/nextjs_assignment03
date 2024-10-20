@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from "next/image"
+import { FaGift, FaRecycle, FaRocket, FaWallet } from 'react-icons/fa'
+import { FaMessage } from 'react-icons/fa6'
 
 
 const HeroSection = () => {

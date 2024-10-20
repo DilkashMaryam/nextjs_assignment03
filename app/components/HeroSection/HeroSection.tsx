@@ -6,7 +6,7 @@ import { FaMessage } from 'react-icons/fa6'
 
 const HeroSection = () => {
   return (
-    <div className='bg-slate-900 w-full relative'>
+    <div className='bg-slate-100 w-full relative'>
       <Image
        src="/image/hero.png" 
        alt="hero"
@@ -22,7 +22,7 @@ const HeroSection = () => {
         <p className='text-gray-500 font-thin'>Delivery service in all citites</p></li>
        <FaRecycle className='size-10 text-green-500'/>
        <li className='text-black font-bold'>Immediate Return
-        <p className='text-gray-500 font-thin'>If lants have problem</p></li>
+        <p className='text-gray-500 font-thin'>If plants have problem</p></li>
        <FaWallet className='size-10 text-green-500'/>
        <li className='text-black font-bold'>Easypaia Payment 
         <p className='text-gray-500 font-thin'>COD or Easypaisa payment</p></li>
